@@ -1,17 +1,30 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Rated Uganda backend API",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node tests/smoke.js && node tests/llmValidation.test.js && node tests/scraper.test.js",
+    "dev": "node server.js",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "bcryptjs": "^3.0.2",
     "cors": "^2.8.6",
-    "express": "^5.2.1"
+    "dotenv": "^16.5.0",
+    "express": "^5.2.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.2",
+    "mysql2": "^3.14.1",
+    "rss-parser": "^3.13.0"
+  },
+  "devDependencies": {
+    "axios": "^1.17.0",
+    "form-data": "^4.0.6"
   }
 }
