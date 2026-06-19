@@ -1,3 +1,14 @@
+.gitattributes
+errors.txt
+rated_project.zip
+Rated_Uganda_Retrospective_Guide.docx
+RATEDUGANDA_AESTHETIC_RETROFIT_PROMPT.md
+Design_RATEDUGANDA_MULTI_AGENT_BUILD_PROMPT.md
+ARCHITECTURE_MIGRATION_GUIDE.md
+social_links.txt
+ollama_api.txt
+pexels_api.txt
+
 # Dependencies
 node_modules/
 
@@ -15,19 +26,11 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Runtime
-backend/uploads/*
-!backend/uploads/.gitkeep
-
-# QA / build docs
-RATEDUGANDA_MULTI_AGENT_BUILD_PROMPT.md
+# Runtime / uploads
+backend/uploads/
 
 # Misc
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
-
-# API keys
-ollama_api.txt
-pexels_api.txt
