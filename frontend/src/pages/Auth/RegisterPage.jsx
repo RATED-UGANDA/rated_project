@@ -17,7 +17,7 @@ export default function RegisterPage() {
     e.preventDefault();
     setError('');
 
-    if (!isValidEmail(form.email)) {
+    if (!form.email || !isValidEmail(form.email)) {
       setError('Invalid email');
       return;
     }
